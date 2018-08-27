@@ -1,0 +1,155 @@
+/*
+ * Archivo de prueba Interprete implementado con C# y Irony
+ * Desarrollado por Javier Navarro
+ * Como material de apoyo para el curso de Organizacion de Lenguajes y Compiladores 2
+ * Agosto 2018
+*/
+
+// Area de variables globales.
+int x = 5;
+Struct Direccion( String calle, int zona);
+
+// Metodo principal, este será el primero en ejecutarse.
+void main(){
+
+	print("-------------------------- Expresiones -------------------------");
+	print("");
+	print("hola mundo, Javier Navarro estuvo aqui! :v");
+	print("La variable global x es :" + x);
+	int x = 4 + 3 * 2;
+	int num = 8;	
+	print("La variable local x es :" + x);
+	print("");
+	print("");
+
+
+	print("---------------------------- Ciclos ----------------------------");
+	print("");
+	pruebaCiclo(5);
+	print("");
+	print("");
+
+
+
+	print("--------------------- Funciones y recursividad -----------------");
+	print("");
+	print("El factorial de " + num + " calculado de forma iterativa es: " + factorialIterativo(num));
+	print("El factorial de " + num + " calculado de forma recursiva es: " + factorialRecursivo(num));
+	print("Fibonacci de " + num + " calculado de forma iterativa es: " + fibonacciIterativo(num));
+	print("Fibonacci de " + num + " calculado de forma recursiva es: " + fibonacciRecursivo(num));
+	print("");
+    print("");
+
+
+
+    print("------------ Structs, atributos y accesos ---------------");
+    print("");
+	Struct Persona(String nombre, String apellido, int edad);
+    Persona p1;
+    Persona p2;
+    Persona p3;
+    p1.nombre = "Erick";
+    p1.apellido = "Navarro";
+    p1.edad = 25;
+	p2.nombre = "Javier";
+	p2.apellido = p1.apellido;
+	p2.edad = 21;
+	p3.nombre = "Joaquin";
+	p3.apellido = p1.apellido;
+	p3.edad = 19;
+	print("Los hermanos " + p1.apellido + " son tres: " + p1.nombre + ", " + p2.nombre + " y " + p3.nombre);
+	print("El mayor el Ing. " + p1.nombre + " " + p1.apellido + " es su catedratico de Compi 2...");
+	print("El de enmedio " + p2.nombre + " "+p2.apellido + " es su auxiliar de Compi2 jajaja Salu" + 2);
+	print("El menor es " + p3.nombre + " " + p3.apellido + ", ya lo conoceran :p");
+
+	
+	Direccion d;
+	d = getDireccion("21", 20);
+	print("La familia Navarro no vive en la " + d.calle + " calle, zona: " + d.zona);
+	print("");
+    print("");
+
+	print("------------ Dadle buen uso mentorado mio ---------------");
+}
+
+/*
+ * Funcion pruebaCiclo, ejecuta un ciclo while un numero n de iteraciones.
+ */
+void pruebaCiclo(int n){
+	int i = 1;
+	print("Deberian haber "+ n + " iteraciones.");
+	while(i < (n + 1)){
+		print("Esta es la iteracion: "+ i);
+		i = i + 1;
+	}
+}
+
+/*
+ * Funcion factorial recursivo, calcula el factorial de un numero n.
+ * Retorna: 1*...*n
+ */
+
+int factorialRecursivo(int n){
+	if(n == 0){
+		return 1;
+	}else{
+		return n * factorialRecursivo(n - 1);
+	}
+}
+
+/*
+ * Funcion factorial iterativo, calcula el factorial de un numero n.
+ * Retorna: 1 * ... * n
+ */
+ 
+int factorialIterativo(int n){
+	int fact = 1;
+    if(n != 0){
+        int i = n;
+        while(i > 0){
+            fact = fact * i;
+            i = i - 1;
+        }
+    }
+    return fact;
+}
+
+/*
+ * Funcion fibonacci recursivo, calcula el fibonacci de un numero n.
+ */
+int fibonacciRecursivo(int n){
+	if(n < 2){
+		return n;
+	}else{
+		return fibonacciRecursivo(n - 2) + fibonacciRecursivo(n - 1);
+	}
+}
+
+
+/*
+ * Funcion fibonacci iterativo, calcula el fibonacci de un numero n.
+ */
+int fibonacciIterativo(int n){
+	int i = 0;
+	int j = 1;
+	int k = 1;
+
+	while (k < n){	
+		int t;
+		t = i + j;
+		i = j;
+		j = t;
+		k = k + 1;
+	}
+	return j;
+}
+
+/*
+ * Funcion getDireccion, retorna un Struct Direccion.
+ */
+Direccion getDireccion(String calle,int zona){
+	Direccion dir;
+	dir.calle=calle;
+	dir.zona=zona;
+	return dir;
+}

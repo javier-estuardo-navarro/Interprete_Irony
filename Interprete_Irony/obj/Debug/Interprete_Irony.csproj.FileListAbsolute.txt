@@ -1,0 +1,9 @@
+c:\users\javier\documents\visual studio 2015\Projects\Interprete_Irony\Interprete_Irony\bin\Debug\Interprete_Irony.exe.config
+c:\users\javier\documents\visual studio 2015\Projects\Interprete_Irony\Interprete_Irony\bin\Debug\Interprete_Irony.exe
+c:\users\javier\documents\visual studio 2015\Projects\Interprete_Irony\Interprete_Irony\bin\Debug\Interprete_Irony.pdb
+c:\users\javier\documents\visual studio 2015\Projects\Interprete_Irony\Interprete_Irony\obj\Debug\Interprete_Irony.csprojResolveAssemblyReference.cache
+c:\users\javier\documents\visual studio 2015\Projects\Interprete_Irony\Interprete_Irony\obj\Debug\Interprete_Irony.GUI.resources
+c:\users\javier\documents\visual studio 2015\Projects\Interprete_Irony\Interprete_Irony\obj\Debug\Interprete_Irony.Properties.Resources.resources
+c:\users\javier\documents\visual studio 2015\Projects\Interprete_Irony\Interprete_Irony\obj\Debug\Interprete_Irony.csproj.GenerateResource.Cache
+c:\users\javier\documents\visual studio 2015\Projects\Interprete_Irony\Interprete_Irony\obj\Debug\Interprete_Irony.exe
+c:\users\javier\documents\visual studio 2015\Projects\Interprete_Irony\Interprete_Irony\obj\Debug\Interprete_Irony.pdb
