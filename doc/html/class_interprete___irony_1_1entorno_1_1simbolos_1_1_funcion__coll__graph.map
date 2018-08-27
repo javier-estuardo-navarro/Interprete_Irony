@@ -1,0 +1,5 @@
+<map id="Interprete_Irony.entorno.simbolos.Funcion" name="Interprete_Irony.entorno.simbolos.Funcion">
+<area shape="rect" id="node2" href="$class_interprete___irony_1_1entorno_1_1_simbolo.html" title="Clase símbolo, que es un nodo de la tabla de símbolos. " alt="" coords="29,80,99,107"/>
+<area shape="rect" id="node3" href="$interface_interprete___irony_1_1ast_1_1alta_abstraccion_1_1_instruccion.html" title="Esta interfaz se implementa en todas aquellas sentencias que ejecutan acciones pero no devuelven ning..." alt="" coords="123,80,208,107"/>
+<area shape="rect" id="node4" href="$interface_interprete___irony_1_1ast_1_1alta_abstraccion_1_1_nodo_a_s_t.html" title="La interfaz NodoAST define el elemento basico que conformara nuestro Arbol Abstracto de Analisis Sint..." alt="" coords="127,5,204,32"/>
+</map>
