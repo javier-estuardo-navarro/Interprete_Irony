@@ -1,0 +1,4 @@
+<map id="Interprete_Irony.ast.altaAbstraccion.Condicional" name="Interprete_Irony.ast.altaAbstraccion.Condicional">
+<area shape="rect" id="node2" href="$class_interprete___irony_1_1ast_1_1bucles_1_1_while.html" title="Clase que representa el bucle While, este ciclo es basico y servira de base para la construccion de l..." alt="" coords="5,95,184,136"/>
+<area shape="rect" id="node3" href="$class_interprete___irony_1_1ast_1_1control_flujo_1_1_if.html" title="Clase que representa a la sentencia de control If, If&#45;Else. " alt="" coords="208,95,384,136"/>
+</map>
